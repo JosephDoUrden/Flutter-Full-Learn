@@ -5,6 +5,7 @@ import 'package:flutter_full_learn/101/image_learn.dart';
 import 'package:flutter_full_learn/101/padding_learn.dart';
 import 'package:flutter_full_learn/101/text_learn_view.dart';
 import 'package:flutter_full_learn/101/container_sized_box_learn.dart';
+import 'package:flutter_full_learn/demos/note_demos_view.dart';
 import '101/icon_learn.dart';
 import '101/scaffold_learn.dart';
 import '101/button_learn.dart';
@@ -27,11 +28,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
           appBarTheme: const AppBarTheme(
         centerTitle: true,
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.transparent,
         elevation: 0,
-        systemOverlayStyle: SystemUiOverlayStyle.light,
+        systemOverlayStyle: SystemUiOverlayStyle.dark,
       )),
-      home: ImageLearn(),
+      home: NoteDemos(),
     );
   }
 }
