@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_full_learn/101/card_learn.dart';
+import 'package:flutter_full_learn/101/column_row_learn.dart';
 import 'package:flutter_full_learn/101/custom_widget_learn.dart';
 import 'package:flutter_full_learn/101/image_learn.dart';
 import 'package:flutter_full_learn/101/indicator_learn.dart';
@@ -39,7 +40,7 @@ class MyApp extends StatelessWidget {
             elevation: 0,
             systemOverlayStyle: SystemUiOverlayStyle.dark,
           )),
-      home: ListTileLearn(),
+      home: ColumnRowLearn(),
     );
   }
 }
