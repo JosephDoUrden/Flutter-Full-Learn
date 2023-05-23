@@ -10,6 +10,7 @@ import 'package:flutter_full_learn/101/padding_learn.dart';
 import 'package:flutter_full_learn/101/page_view_learn.dart';
 import 'package:flutter_full_learn/101/stack_learn.dart';
 import 'package:flutter_full_learn/101/stateful_learn.dart';
+import 'package:flutter_full_learn/101/stateful_life_cycle_learn.dart';
 import 'package:flutter_full_learn/101/text_learn_view.dart';
 import 'package:flutter_full_learn/101/container_sized_box_learn.dart';
 import 'package:flutter_full_learn/demos/note_demos_view.dart';
@@ -42,7 +43,7 @@ class MyApp extends StatelessWidget {
             elevation: 0,
             systemOverlayStyle: SystemUiOverlayStyle.dark,
           )),
-      home: PageViewLearn(),
+      home: const StatefulLifeCycleLearn(message: "Yusufhan"),
     );
   }
 }
