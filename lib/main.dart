@@ -18,6 +18,7 @@ import 'package:flutter_full_learn/101/text_learn_view.dart';
 import 'package:flutter_full_learn/101/container_sized_box_learn.dart';
 import 'package:flutter_full_learn/demos/color_demos_view.dart';
 import 'package:flutter_full_learn/demos/color_life_cycle_view.dart';
+import 'package:flutter_full_learn/demos/my_collections_demos.dart';
 import 'package:flutter_full_learn/demos/note_demos_view.dart';
 import 'package:flutter_full_learn/demos/stack_demo_view.dart';
 import '101/icon_learn.dart';
@@ -48,7 +49,7 @@ class MyApp extends StatelessWidget {
             elevation: 0,
             systemOverlayStyle: SystemUiOverlayStyle.dark,
           )),
-      home: const ListViewBuilderLearn(),
+      home: const MyCollectionsDemos(),
     );
   }
 }
