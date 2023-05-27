@@ -6,6 +6,8 @@ import 'package:flutter_full_learn/101/custom_widget_learn.dart';
 import 'package:flutter_full_learn/101/image_learn.dart';
 import 'package:flutter_full_learn/101/indicator_learn.dart';
 import 'package:flutter_full_learn/101/list_tile_learn.dart';
+import 'package:flutter_full_learn/101/list_view_builder.dart';
+import 'package:flutter_full_learn/101/list_view_learn.dart';
 import 'package:flutter_full_learn/101/padding_learn.dart';
 import 'package:flutter_full_learn/101/page_view_learn.dart';
 import 'package:flutter_full_learn/101/stack_learn.dart';
@@ -46,7 +48,7 @@ class MyApp extends StatelessWidget {
             elevation: 0,
             systemOverlayStyle: SystemUiOverlayStyle.dark,
           )),
-      home: const ColorLifeCycleView(),
+      home: const ListViewBuilderLearn(),
     );
   }
 }
