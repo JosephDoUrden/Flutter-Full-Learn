@@ -18,9 +18,6 @@ class _MyCollectionsDemosState extends State<MyCollectionsDemos> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('yusufhan.dev'),
-      ),
       body: ListView.builder(
         padding: PaddingUtility().paddingHorizontal,
         itemCount: _items.length,

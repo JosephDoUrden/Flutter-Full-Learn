@@ -61,8 +61,7 @@ class _createButton extends StatelessWidget {
 
 //Center text widget
 class _SubtitleWidget extends StatelessWidget {
-  const _SubtitleWidget(
-      {super.key, this.textAlign = TextAlign.center, required this.text});
+  const _SubtitleWidget({super.key, this.textAlign = TextAlign.center, required this.text});
   final TextAlign? textAlign;
   final String text;
   @override
