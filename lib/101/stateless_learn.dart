@@ -26,9 +26,7 @@ class StatelessLearn extends StatelessWidget {
 }
 
 class _CustomContainer extends StatelessWidget {
-  const _CustomContainer({
-    super.key,
-  });
+  const _CustomContainer();
 
   @override
   Widget build(BuildContext context) {

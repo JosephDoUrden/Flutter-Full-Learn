@@ -36,7 +36,6 @@ class NoteDemos extends StatelessWidget {
 
 class _createButton extends StatelessWidget {
   const _createButton({
-    super.key,
     required String createNote,
   }) : _createNote = createNote;
 
@@ -61,7 +60,7 @@ class _createButton extends StatelessWidget {
 
 //Center text widget
 class _SubtitleWidget extends StatelessWidget {
-  const _SubtitleWidget({super.key, this.textAlign = TextAlign.center, required this.text});
+  const _SubtitleWidget({required this.text, this.textAlign});
   final TextAlign? textAlign;
   final String text;
   @override
@@ -69,7 +68,7 @@ class _SubtitleWidget extends StatelessWidget {
     return Text(
       text,
       textAlign: TextAlign.center,
-      style: Theme.of(context).textTheme.subtitle1?.copyWith(
+      style: Theme.of(context).textTheme.titleMedium?.copyWith(
             color: Colors.black,
             fontWeight: FontWeight.w400,
           ),
@@ -79,7 +78,6 @@ class _SubtitleWidget extends StatelessWidget {
 
 class _TitleWidget extends StatelessWidget {
   const _TitleWidget({
-    super.key,
     required this.title,
   });
 
@@ -98,8 +96,8 @@ class _TitleWidget extends StatelessWidget {
 }
 
 class PaddingItems {
-  final EdgeInsets horizontalPadding = EdgeInsets.symmetric(horizontal: 20);
-  final EdgeInsets verticalPadding = EdgeInsets.symmetric(vertical: 10);
+  final EdgeInsets horizontalPadding = const EdgeInsets.symmetric(horizontal: 20);
+  final EdgeInsets verticalPadding = const EdgeInsets.symmetric(vertical: 10);
 }
 
 class ButtonHeights {

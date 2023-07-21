@@ -37,10 +37,10 @@ class _ListViewLearnState extends State<ListViewLearn> {
               ],
             ),
           ),
-          Divider(),
+          const Divider(),
           Container(color: Colors.red, height: 300),
           IconButton(onPressed: () {}, icon: const Icon(Icons.close)),
-          _ListDemo()
+          const _ListDemo()
         ],
       ),
     );
@@ -48,7 +48,7 @@ class _ListViewLearnState extends State<ListViewLearn> {
 }
 
 class _ListDemo extends StatefulWidget {
-  const _ListDemo({super.key});
+  const _ListDemo();
 
   @override
   State<_ListDemo> createState() => __ListDemoState();

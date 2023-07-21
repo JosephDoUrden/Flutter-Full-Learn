@@ -41,7 +41,7 @@ class CustomFootButton extends StatelessWidget
   Widget build(BuildContext context) {
     return ElevatedButton(
         style: ElevatedButton.styleFrom(
-          primary: redColor,
+          backgroundColor: redColor,
           shape: const StadiumBorder(),
         ),
         onPressed: () {},
@@ -64,6 +64,6 @@ class _ColorsUtility {
 }
 
 class _PaddingUtility {
-  final EdgeInsets buttonPadding = EdgeInsets.all(10);
-  final EdgeInsets horizontalPadding = EdgeInsets.symmetric(horizontal: 20);
+  final EdgeInsets buttonPadding = const EdgeInsets.all(10);
+  final EdgeInsets horizontalPadding = const EdgeInsets.symmetric(horizontal: 20);
 }

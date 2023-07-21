@@ -14,7 +14,6 @@ class ButtonLearn extends StatelessWidget {
         children: [
           TextButton(
             onPressed: () {},
-            child: Text('Save', style: Theme.of(context).textTheme.titleMedium),
             style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.resolveWith((states) {
               if (states.contains(MaterialState.pressed)) {
@@ -22,8 +21,9 @@ class ButtonLearn extends StatelessWidget {
               }
               return Colors.red;
             })),
+            child: Text('Save', style: Theme.of(context).textTheme.titleMedium),
           ),
-          ElevatedButton(onPressed: null, child: const Text('data')),
+          const ElevatedButton(onPressed: null, child: Text('data')),
           IconButton(onPressed: () {}, icon: const Icon(Icons.abc_outlined)),
           FloatingActionButton(
             onPressed: () {},
@@ -32,8 +32,7 @@ class ButtonLearn extends StatelessWidget {
           ),
           OutlinedButton(
               style: OutlinedButton.styleFrom(
-                  backgroundColor: Colors.amber,
-                  primary: Colors.black,
+                  foregroundColor: Colors.black, backgroundColor: Colors.amber,
                   padding: const EdgeInsets.all(12),
                   shape: const StadiumBorder()),
               onPressed: () {},
@@ -45,7 +44,7 @@ class ButtonLearn extends StatelessWidget {
           Container(height: 50),
           ElevatedButton(
             style: ElevatedButton.styleFrom(
-                primary: Colors.black,
+                backgroundColor: Colors.black,
                 shape: const RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(20)))),
             onPressed: () {},

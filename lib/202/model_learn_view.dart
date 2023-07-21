@@ -12,7 +12,7 @@ class _ModelLearnViewState extends State<ModelLearnView> {
   @override
   void initState() {
     super.initState();
-    final user1 = PostModel()
+    final user1 = PostModel1()
       ..userId = 1
       ..body = 'ysf';
     user1.body = 'hello';
@@ -23,6 +23,6 @@ class _ModelLearnViewState extends State<ModelLearnView> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }

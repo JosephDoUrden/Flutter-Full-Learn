@@ -25,7 +25,7 @@ class _StatefulLearnState extends State<StatefulLearn> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(LanguageItems.welcomeTitle),
+        title: const Text(LanguageItems.welcomeTitle),
       ),
       floatingActionButton: Row(
         mainAxisSize: MainAxisSize.min,

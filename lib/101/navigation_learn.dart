@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_full_learn/101/image_learn.dart';
 
 import 'navigation_detail_learn.dart';
 

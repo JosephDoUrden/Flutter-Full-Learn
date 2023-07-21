@@ -37,5 +37,5 @@ class IconSizes {
 }
 
 class IconColors {
-  final Color froly = Color(0xFFED617A);
+  final Color froly = const Color(0xFFED617A);
 }

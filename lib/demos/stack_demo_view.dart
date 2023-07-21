@@ -16,7 +16,8 @@ class StackDemoView extends StatelessWidget {
               alignment: Alignment.center,
               children: [
                 Positioned.fill(
-                    child: const RandomImage(), bottom: _cardHeight / 2),
+                    bottom: _cardHeight / 2,
+                    child: const RandomImage()),
                 Positioned(
                     height: _cardHeight,
                     width: _cardWidth,
@@ -31,9 +32,7 @@ class StackDemoView extends StatelessWidget {
 }
 
 class _cardCustom extends StatelessWidget {
-  const _cardCustom({
-    super.key,
-  });
+  const _cardCustom();
 
   @override
   Widget build(BuildContext context) {

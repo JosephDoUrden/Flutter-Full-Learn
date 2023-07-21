@@ -20,7 +20,7 @@ class ScaffoldLearnView extends StatelessWidget {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       drawer: const Drawer(),
-      bottomNavigationBar: Container(
+      bottomNavigationBar: SizedBox(
         height: 200,
         child: BottomNavigationBar(items: const [
           BottomNavigationBarItem(icon: Icon(Icons.abc_outlined), label: 'a'),
