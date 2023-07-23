@@ -34,8 +34,12 @@ dependencies:
   shimmer: ^3.0.0
   dio: ^5.3.0
 
+  #cache
+  shared_preferences: ^2.2.0
+  flutter_secure_storage: ^8.0.0
+
   #Google
-  #url_launcher: ^6.0.20
+  url_launcher: ^6.1.12
 
   #Animation
   flutter_spinkit: ^5.2.0

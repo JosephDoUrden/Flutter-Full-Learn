@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_full_learn/202/animated_learn_view.dart';
+import 'package:flutter_full_learn/202/cache/secure_context/secure_context_learn.dart';
+import 'package:flutter_full_learn/202/cache/shared_learn_cache.dart';
+import 'package:flutter_full_learn/202/cache/shared_list_cache.dart';
 import 'package:flutter_full_learn/202/image_learn_202.dart';
 import 'package:flutter_full_learn/202/oop_learn_view.dart';
 import 'package:flutter_full_learn/202/package_learn_view.dart';
@@ -36,7 +39,7 @@ class MyApp extends StatelessWidget {
             elevation: 0,
             systemOverlayStyle: SystemUiOverlayStyle.dark,
           )),
-      home: const OOPLearnView(),
+      home: const SharedContextLearn(),
     );
   }
 }
