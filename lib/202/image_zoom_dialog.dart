@@ -19,7 +19,7 @@ class _ImageZoomDialogState extends State<ImageZoomDialog> {
           showDialog(
               context: context,
               builder: (context) {
-                return _ImageDialog();
+                return const _ImageDialog();
               });
         },
       ),
@@ -33,7 +33,7 @@ class AppBarText {
 }
 
 class _ImageDialog extends StatelessWidget {
-  const _ImageDialog({super.key});
+  const _ImageDialog();
 
   @override
   Widget build(BuildContext context) {

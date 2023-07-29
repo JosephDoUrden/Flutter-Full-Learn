@@ -3,7 +3,6 @@ import 'dart:convert';
 import 'package:flutter_full_learn/202/cache/shared_manager.dart';
 import 'package:flutter_full_learn/202/cache/user_model.dart';
 
-import '../shared_learn_cache.dart';
 
 class UserCacheManager {
   final SharedManager sharedManager;
@@ -12,8 +11,8 @@ class UserCacheManager {
 
   Future<void> saveItems(List<User> items) async {
     // Compute
-    final _items = items.map((element) => jsonEncode(element.toJson())).toList();
-    await sharedManager.saveStringItems(SharedKeys.users, _items);
+    final items0 = items.map((element) => jsonEncode(element.toJson())).toList();
+    await sharedManager.saveStringItems(SharedKeys.users, items0);
   }
 
   List<User>? getItems() {
@@ -28,5 +27,6 @@ class UserCacheManager {
         return User('', '', '');
       }).toList();
     }
+    return null;
   }
 }

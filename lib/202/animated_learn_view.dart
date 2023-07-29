@@ -23,7 +23,7 @@ class _AnimatedLearnViewState extends State<AnimatedLearnView> {
       floatingActionButton: FloatingActionButton(onPressed: () {
         _changeVisibility();
       }),
-      body: Column(),
+      body: const Column(),
     );
   }
 
@@ -44,5 +44,5 @@ extension BuildContextExtension on BuildContext {
 }
 
 class _DurationItems {
-  static final durationLow = Duration(seconds: 1);
+  static const durationLow = Duration(seconds: 1);
 }

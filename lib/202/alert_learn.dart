@@ -29,9 +29,7 @@ class _AlertLearnState extends State<AlertLearn> {
 }
 
 class _UpdateDialog extends StatelessWidget {
-  const _UpdateDialog({
-    super.key,
-  });
+  const _UpdateDialog();
 
   @override
   Widget build(BuildContext context) {

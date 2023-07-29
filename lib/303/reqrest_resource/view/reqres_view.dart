@@ -1,4 +1,3 @@
-import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_full_learn/product/extension/string_extension.dart';
@@ -17,7 +16,7 @@ class _ReqResViewState extends ReqresViewModel {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: isLoading ? CircularProgressIndicator() : null,
+        title: isLoading ? const CircularProgressIndicator() : null,
       ),
       body: ListView.builder(
         itemCount: resources.length,

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_full_learn/202/cache/shared_manager.dart';
 import 'package:flutter_full_learn/202/cache/user_model.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 class SharedLearn extends StatefulWidget {
   const SharedLearn({super.key});
@@ -44,10 +43,10 @@ class _SharedLearnState extends LoadingStateful<SharedLearn> {
   }
 
   void _onChangeValue(String value) {
-    final _value = int.tryParse(value);
-    if (_value != null) {
+    final value0 = int.tryParse(value);
+    if (value0 != null) {
       setState(() {
-        _currentValue = _value;
+        _currentValue = value0;
       });
     }
   }

@@ -1,5 +1,3 @@
-import 'package:dio/dio.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_full_learn/202/cache/shared_learn_cache.dart';
 import 'package:flutter_full_learn/303/reqrest_resource/model/resource_model.dart';
 import 'package:flutter_full_learn/303/reqrest_resource/service/reqres_service.dart';

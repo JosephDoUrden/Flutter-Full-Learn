@@ -40,7 +40,6 @@ class _SheetLearnState extends State<SheetLearn> {
 
 class _CustomSheet extends StatefulWidget {
   const _CustomSheet({
-    super.key,
     required Color backgroundColor,
   });
 
@@ -114,7 +113,7 @@ mixin ProductSheetMixin {
 }
 
 class _CustomMainSheet extends StatelessWidget {
-  const _CustomMainSheet({super.key, required this.child});
+  const _CustomMainSheet({required this.child});
   final Widget child;
 
   @override
@@ -125,7 +124,7 @@ class _CustomMainSheet extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            _BaseSheetHeader(),
+            const _BaseSheetHeader(),
             child,
           ],
         ),
@@ -135,9 +134,7 @@ class _CustomMainSheet extends StatelessWidget {
 }
 
 class _BaseSheetHeader extends StatelessWidget {
-  const _BaseSheetHeader({
-    super.key,
-  });
+  const _BaseSheetHeader();
 
   @override
   Widget build(BuildContext context) {

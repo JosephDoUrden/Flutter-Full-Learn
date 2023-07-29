@@ -1,4 +1,6 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
+
 import 'package:flutter_full_learn/101/image_learn.dart';
 
 class NoteDemos extends StatelessWidget {
@@ -60,7 +62,11 @@ class _createButton extends StatelessWidget {
 
 //Center text widget
 class _SubtitleWidget extends StatelessWidget {
-  const _SubtitleWidget({required this.text, this.textAlign});
+  const _SubtitleWidget({
+    Key? key,
+    this.textAlign,
+    required this.text,
+  }) : super(key: key);
   final TextAlign? textAlign;
   final String text;
   @override
