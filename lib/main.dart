@@ -11,6 +11,8 @@ import 'package:flutter_full_learn/202/oop_learn_view.dart';
 import 'package:flutter_full_learn/202/package_learn_view.dart';
 import 'package:flutter_full_learn/202/service/service_learn_get_view.dart';
 import 'package:flutter_full_learn/202/sheet_learn.dart';
+import 'package:flutter_full_learn/303/part/part_of_learn.dart';
+import 'package:flutter_full_learn/303/reqrest_resource/view/reqres_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -42,7 +44,7 @@ class MyApp extends StatelessWidget {
             elevation: 0,
             systemOverlayStyle: SystemUiOverlayStyle.dark,
           )),
-      home: const ImageZoomDialog(),
+      home: const ReqResView(),
     );
   }
 }
