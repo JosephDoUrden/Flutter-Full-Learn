@@ -10,7 +10,7 @@ It is a repository documenting my journey of learning Flutter from the basics to
 
 This repository is a comprehensive collection of my progress in learning Flutter, starting from the fundamentals and advancing to more advanced topics. It serves as a testament to my growth as a Flutter developer, showcasing the skills and knowledge I have gained throughout my learning process. From building simple widgets to creating complex applications, this repository demonstrates various stages of my Flutter learning adventure. Whether you are a beginner seeking to embark on your Flutter journey or an experienced developer looking to gain insights into Flutter development, you will find valuable resources and examples here to guide you on your path to mastering Flutter. 
 
-I would like to express my special thanks to Veli Bacık for inspiring and guiding me during my Flutter learning journey. Let's embrace the power of Flutter together and explore the potential of cross-platform app development!
+I would like to express my special thanks to Veli Bacık [@vb10](https://github.com/VB10) for inspiring and guiding me during my Flutter learning journey. Let's embrace the power of Flutter together and explore the potential of cross-platform app development!
 
 ## Contact
 
