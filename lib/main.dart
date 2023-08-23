@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_full_learn/202/alert_learn.dart';
 import 'package:flutter_full_learn/303/lottie_learn.dart';
 import 'package:flutter_full_learn/product/constant/project_constant.dart';
 import 'package:flutter_full_learn/product/global/resource_context.dart';
@@ -25,7 +26,11 @@ class MyApp extends StatelessWidget {
       title: ProjectItems.projectName,
       debugShowCheckedModeBanner: false,
       theme: context.watch<ThemeNotifier>().currentTheme,
-      home: const LottieLearn(),
+      routes: {
+        "/": (context) => const LottieLearn(),
+        "/feed": (context) => const AlertLearn(),
+      },
+      // home: const LottieLearn(),
     );
   }
 }
