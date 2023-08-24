@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_full_learn/202/alert_learn.dart';
 import 'package:flutter_full_learn/303/lottie_learn.dart';
+import 'package:flutter_full_learn/303/navigator/navigate_home_detail_view.dart';
+import 'package:flutter_full_learn/303/navigator/navigate_home_view.dart';
+import 'package:flutter_full_learn/303/navigator/navigate_profile_view.dart';
 import 'package:flutter_full_learn/product/constant/project_constant.dart';
 import 'package:flutter_full_learn/product/global/resource_context.dart';
 import 'package:flutter_full_learn/product/global/theme_notifier.dart';
@@ -28,7 +31,9 @@ class MyApp extends StatelessWidget {
       theme: context.watch<ThemeNotifier>().currentTheme,
       routes: {
         "/": (context) => const LottieLearn(),
-        "/feed": (context) => const AlertLearn(),
+        "/home": (context) => const NavigateHomeView(),
+        "/homeDetail": (context) => const NavigateHomeDetailView(),
+        "/profile": (context) => const NavigateProfileView(),
       },
       // home: const LottieLearn(),
     );
