@@ -21,7 +21,7 @@ class _NavigateHomeDetailViewState extends State<NavigateHomeDetailView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('$_id Navigate Home Detail View'),
+        title: Text(_id),
       ),
     );
   }
