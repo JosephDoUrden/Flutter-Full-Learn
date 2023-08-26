@@ -4,10 +4,17 @@ import 'package:flutter_full_learn/303/navigator/navigate_home_view.dart';
 import 'package:flutter_full_learn/303/navigator/navigate_profile_view.dart';
 
 class NavigatorRoutes {
+  static const _paraf = "/";
   final items = {
-    "/": (context) => const LottieLearn(),
-    "/home": (context) => const NavigateHomeView(),
-    "/homeDetail": (context) => const NavigateHomeDetailView(),
-    "/profile": (context) => const NavigateProfileView(),
+    _paraf: (context) => const LottieLearn(),
+    NavigateRoutes.home.withParaf: (context) => const NavigateHomeView(),
+    NavigateRoutes.detail.withParaf: (context) => const NavigateHomeDetailView(),
+    NavigateRoutes.profile.withParaf: (context) => const NavigateProfileView(),
   };
+}
+
+enum NavigateRoutes { init, home, detail, profile }
+
+extension NavigateRoutesExtension on NavigateRoutes {
+  String get withParaf => "/$name";
 }
