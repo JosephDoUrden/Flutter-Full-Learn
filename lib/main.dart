@@ -30,6 +30,13 @@ class MyApp extends StatelessWidget {
       title: ProjectItems.projectName,
       debugShowCheckedModeBanner: false,
       theme: context.watch<ThemeNotifier>().currentTheme,
+      onUnknownRoute: (settings) {
+        return MaterialPageRoute(
+          builder: (context) {
+            return const LottieLearn();
+          },
+        );
+      },
       routes: NavigatorRoutes().items,
       // home: const LottieLearn(),
     );

@@ -9,19 +9,25 @@ class NavigateHomeDetailView extends StatefulWidget {
 }
 
 class _NavigateHomeDetailViewState extends State<NavigateHomeDetailView> {
-  late String _id;
+  String? _id;
 
   @override
   void initState() {
     super.initState();
-    _id = widget.id ?? '';
+    Future.microtask(() {
+      final _modelId = ModalRoute.of(context)?.settings.arguments;
+
+      setState(() {
+        _id = _modelId is String ? _modelId : widget.id;
+      });
+    });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(_id),
+        title: Text('$_id Detail Page'),
       ),
     );
   }
