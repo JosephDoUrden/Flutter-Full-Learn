@@ -7,6 +7,7 @@ import 'package:flutter_full_learn/303/navigator/navigate_profile_view.dart';
 import 'package:flutter_full_learn/product/constant/project_constant.dart';
 import 'package:flutter_full_learn/product/global/resource_context.dart';
 import 'package:flutter_full_learn/product/global/theme_notifier.dart';
+import 'package:flutter_full_learn/product/navigator/navigator_routes.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -29,12 +30,7 @@ class MyApp extends StatelessWidget {
       title: ProjectItems.projectName,
       debugShowCheckedModeBanner: false,
       theme: context.watch<ThemeNotifier>().currentTheme,
-      routes: {
-        "/": (context) => const LottieLearn(),
-        "/home": (context) => const NavigateHomeView(),
-        "/homeDetail": (context) => const NavigateHomeDetailView(),
-        "/profile": (context) => const NavigateProfileView(),
-      },
+      routes: NavigatorRoutes().items,
       // home: const LottieLearn(),
     );
   }
