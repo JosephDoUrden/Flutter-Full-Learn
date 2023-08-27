@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_full_learn/303/lottie_learn.dart';
 import 'package:flutter_full_learn/303/navigator/navigate_home_detail_view.dart';
 
-mixin NavigatorCustom {
+mixin NavigatorCustom on Widget {
   Route<dynamic>? onGenerateRoute(RouteSettings routeSettings) {
     if (routeSettings.name == "/home") {
       return _navigateToNormal(LottieLearn());

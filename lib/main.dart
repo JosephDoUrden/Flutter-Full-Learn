@@ -7,6 +7,7 @@ import 'package:flutter_full_learn/303/navigator/navigate_profile_view.dart';
 import 'package:flutter_full_learn/product/constant/project_constant.dart';
 import 'package:flutter_full_learn/product/global/resource_context.dart';
 import 'package:flutter_full_learn/product/global/theme_notifier.dart';
+import 'package:flutter_full_learn/product/navigator/navigator_custom.dart';
 import 'package:flutter_full_learn/product/navigator/navigator_routes.dart';
 import 'package:provider/provider.dart';
 
@@ -20,7 +21,7 @@ void main() {
   ));
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatelessWidget with NavigatorCustom {
   const MyApp({super.key});
 
   // This widget is the root of your application.
@@ -38,16 +39,7 @@ class MyApp extends StatelessWidget {
         );
       },
       routes: NavigatorRoutes().items,
-      onGenerateRoute: ((settings) {
-        if (settings.name == "/home") {
-          return MaterialPageRoute(
-            builder: (context) {
-              return const LottieLearn();
-            },
-          );
-        }
-        return null;
-      }),
+      onGenerateRoute: onGenerateRoute,
       // home: const LottieLearn(),
     );
   }
