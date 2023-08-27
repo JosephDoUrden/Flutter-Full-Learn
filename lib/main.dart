@@ -38,6 +38,16 @@ class MyApp extends StatelessWidget {
         );
       },
       routes: NavigatorRoutes().items,
+      onGenerateRoute: ((settings) {
+        if (settings.name == "/home") {
+          return MaterialPageRoute(
+            builder: (context) {
+              return const LottieLearn();
+            },
+          );
+        }
+        return null;
+      }),
       // home: const LottieLearn(),
     );
   }
