@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget with NavigatorCustom {
           },
         );
       },
-      routes: NavigatorRoutes().items,
+      // routes: NavigatorRoutes().items,
       onGenerateRoute: onGenerateRoute,
       // home: const LottieLearn(),
     );
