@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_full_learn/202/alert_learn.dart';
 import 'package:flutter_full_learn/303/lottie_learn.dart';
 import 'package:flutter_full_learn/303/navigator/navigate_home_detail_view.dart';
@@ -10,6 +11,8 @@ import 'package:flutter_full_learn/product/global/theme_notifier.dart';
 import 'package:flutter_full_learn/product/navigator/navigator_custom.dart';
 import 'package:flutter_full_learn/product/navigator/navigator_routes.dart';
 import 'package:provider/provider.dart';
+
+import 'product/navigator/navigator_manager.dart';
 
 void main() {
   runApp(MultiProvider(
@@ -40,6 +43,8 @@ class MyApp extends StatelessWidget with NavigatorCustom {
       },
       // routes: NavigatorRoutes().items,
       onGenerateRoute: onGenerateRoute,
+      navigatorKey: NavigatorManager.instance.navigatorGlobalKey,
+
       // home: const LottieLearn(),
     );
   }
