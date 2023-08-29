@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_full_learn/product/navigator/navigator_manager.dart';
 import 'package:flutter_full_learn/product/navigator/navigator_routes.dart';
 
 class NavigateHomeView extends StatefulWidget {
@@ -17,11 +18,15 @@ class _NavigateHomeViewState extends State<NavigateHomeView> {
       ),
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.arrow_circle_up),
-        onPressed: () {
-          Navigator.of(context).pushNamed(
-            NavigateRoutes.detail.withParaf,
-            arguments: "abc",
+        onPressed: () async {
+          await NavigatorManager.instance.pushToPage(
+            NavigateRoutes.detail,
+            arguments: "yusufhan.dev",
           );
+          // Navigator.of(context).pushNamed(
+          //   NavigateRoutes.detail.withParaf,
+          //   arguments: "abc",
+          // );
         },
       ),
     );
