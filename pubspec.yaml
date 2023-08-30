@@ -39,6 +39,8 @@ dependencies:
   flutter_secure_storage: ^8.0.0
 
   #Google
+  json_serializable: ^6.7.1
+  json_annotation: ^4.8.1
   url_launcher: ^6.1.12
   image_picker: ^1.0.2
 
