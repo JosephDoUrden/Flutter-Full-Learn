@@ -35,6 +35,10 @@
 	<string>Main</string>
 	<key>NSAppleMusicUsageDescription</key>
 	<string>We need to access to your library for upload photo!</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>We need to access to your library for upload photo!</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>We need to access to your library for upload photo!</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
