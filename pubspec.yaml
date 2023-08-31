@@ -20,6 +20,9 @@ dependencies:
   shared_preferences: ^2.2.0
   flutter_secure_storage: ^8.0.0
 
+  #Context
+  kartal: ^3.4.1
+
   #Google
   json_serializable: ^6.7.1
   json_annotation: ^4.8.1
