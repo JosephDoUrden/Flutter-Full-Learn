@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_full_learn/404/bloc/feature/login/cubit/login_cubit.dart';
-import 'package:flutter_full_learn/404/bloc/feature/login/cubit/login_cubit_state.dart';
-import 'package:flutter_full_learn/404/bloc/feature/login/service/login_service.dart';
-import 'package:flutter_full_learn/demos/note_demos_view.dart';
-import 'package:flutter_full_learn/product/service/vexana_network_manager.dart';
+import '../cubit/login_cubit.dart';
+import '../cubit/login_cubit_state.dart';
+import '../service/login_service.dart';
+import '../../../../../demos/note_demos_view.dart';
+import '../../../../../product/service/vexana_network_manager.dart';
 import 'package:kartal/kartal.dart';
 
 part './login_view.g.dart';

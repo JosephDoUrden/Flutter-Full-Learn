@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:flutter_full_learn/202/custom_exception.dart';
+import 'custom_exception.dart';
 
 abstract class IFileDownload {
   bool? downloadItem(FileItem? fileItem);

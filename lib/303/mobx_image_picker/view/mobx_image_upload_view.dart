@@ -1,8 +1,8 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_full_learn/303/mobx_image_picker/viewModel/image_upload_view_model.dart';
-import 'package:flutter_full_learn/product/utility/image_upload.dart';
+import '../viewModel/image_upload_view_model.dart';
+import '../../../product/utility/image_upload.dart';
 import 'package:lottie/lottie.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 
@@ -61,7 +61,7 @@ class _MobxImageUploadState extends State<MobxImageUpload> {
   Observer _localImage() {
     return Observer(
       builder: (context) {
-        return _imageUploadViewModel.file != null ? Image.file(_imageUploadViewModel.file! as File) : const SizedBox();
+        return _imageUploadViewModel.file != null ? Image.file(_imageUploadViewModel.file!) : const SizedBox();
       },
     );
   }

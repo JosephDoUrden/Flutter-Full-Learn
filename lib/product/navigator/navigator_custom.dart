@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_full_learn/303/lottie_learn.dart';
-import 'package:flutter_full_learn/303/mobx_image_picker/view/mobx_image_upload_view.dart';
-import 'package:flutter_full_learn/303/navigator/navigate_home_detail_view.dart';
-import 'package:flutter_full_learn/303/navigator/navigate_home_view.dart';
-import 'package:flutter_full_learn/303/navigator/navigate_profile_view.dart';
-import 'package:flutter_full_learn/product/navigator/navigator_routes.dart';
+import '../../303/lottie_learn.dart';
+import '../../303/mobx_image_picker/view/mobx_image_upload_view.dart';
+import '../../303/navigator/navigate_home_detail_view.dart';
+import '../../303/navigator/navigate_home_view.dart';
+import '../../303/navigator/navigate_profile_view.dart';
+import 'navigator_routes.dart';
 
 mixin NavigatorCustom on Widget {
   Route<dynamic>? onGenerateRoute(RouteSettings routeSettings) {
@@ -12,20 +12,20 @@ mixin NavigatorCustom on Widget {
       return _navigateToNormal(const MobxImageUpload());
     }
 
-    final _routes = routeSettings.name == NavigatorRoutes.paraf
+    final routes = routeSettings.name == NavigatorRoutes.paraf
         ? NavigateRoutes.init
         : NavigateRoutes.values.byName(routeSettings.name!.replaceFirst('/', ''));
 
-    switch (_routes) {
+    switch (routes) {
       case NavigateRoutes.init:
         return _navigateToNormal(const LottieLearn());
       case NavigateRoutes.home:
         return _navigateToNormal(const NavigateHomeView());
       case NavigateRoutes.detail:
-        final _id = routeSettings.arguments;
+        final id = routeSettings.arguments;
         return _navigateToNormal(
           NavigateHomeDetailView(
-            id: _id is String ? _id : null,
+            id: id is String ? id : null,
           ),
           isFullScreenDialog: true,
         );

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_full_learn/product/mixin/navigator_mixin.dart';
-import 'package:flutter_full_learn/product/navigator/navigator_manager.dart';
-import 'package:flutter_full_learn/product/navigator/navigator_routes.dart';
+import '../../product/mixin/navigator_mixin.dart';
+import '../../product/navigator/navigator_manager.dart';
+import '../../product/navigator/navigator_routes.dart';
 
 class NavigateHomeView extends StatefulWidget {
   const NavigateHomeView({super.key});

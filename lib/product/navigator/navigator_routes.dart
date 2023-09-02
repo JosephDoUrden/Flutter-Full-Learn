@@ -1,7 +1,7 @@
-import 'package:flutter_full_learn/303/lottie_learn.dart';
-import 'package:flutter_full_learn/303/navigator/navigate_home_detail_view.dart';
-import 'package:flutter_full_learn/303/navigator/navigate_home_view.dart';
-import 'package:flutter_full_learn/303/navigator/navigate_profile_view.dart';
+import '../../303/lottie_learn.dart';
+import '../../303/navigator/navigate_home_detail_view.dart';
+import '../../303/navigator/navigate_home_view.dart';
+import '../../303/navigator/navigate_profile_view.dart';
 
 class NavigatorRoutes {
   static const paraf = "/";

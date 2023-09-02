@@ -1,12 +1,12 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
-import 'package:flutter_full_learn/303/lottie_learn.dart';
-import 'package:flutter_full_learn/404/bloc/feature/login/view/login_view.dart';
-import 'package:flutter_full_learn/product/constant/project_constant.dart';
-import 'package:flutter_full_learn/product/global/theme_notifier.dart';
-import 'package:flutter_full_learn/product/init/product_init.dart';
-import 'package:flutter_full_learn/product/navigator/navigator_custom.dart';
+import '303/lottie_learn.dart';
+import '404/bloc/feature/login/view/login_view.dart';
+import 'product/constant/project_constant.dart';
+import 'product/global/theme_notifier.dart';
+import 'product/init/product_init.dart';
+import 'product/navigator/navigator_custom.dart';
 import 'package:provider/provider.dart';
 
 import 'product/navigator/navigator_manager.dart';

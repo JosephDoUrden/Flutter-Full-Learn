@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_full_learn/product/constant/duration_items.dart';
-import 'package:flutter_full_learn/product/constant/lottie_items.dart';
-import 'package:flutter_full_learn/product/global/theme_notifier.dart';
-import 'package:flutter_full_learn/product/navigator/navigator_routes.dart';
+import '../product/constant/duration_items.dart';
+import '../product/constant/lottie_items.dart';
+import '../product/global/theme_notifier.dart';
+import '../product/navigator/navigator_routes.dart';
 import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
 

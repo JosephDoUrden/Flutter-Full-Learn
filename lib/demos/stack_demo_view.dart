@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_full_learn/core/random_image.dart';
+import '../core/random_image.dart';
 
 class StackDemoView extends StatelessWidget {
   const StackDemoView({super.key});
@@ -15,14 +15,8 @@ class StackDemoView extends StatelessWidget {
             child: Stack(
               alignment: Alignment.center,
               children: [
-                Positioned.fill(
-                    bottom: _cardHeight / 2,
-                    child: const RandomImage()),
-                Positioned(
-                    height: _cardHeight,
-                    width: _cardWidth,
-                    bottom: 0,
-                    child: const _cardCustom())
+                Positioned.fill(bottom: _cardHeight / 2, child: const RandomImage()),
+                Positioned(height: _cardHeight, width: _cardWidth, bottom: 0, child: const _cardCustom())
               ],
             )),
         const Spacer(flex: 6),

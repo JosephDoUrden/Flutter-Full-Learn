@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_full_learn/demos/my_collections_demos.dart';
-import 'package:flutter_full_learn/demos/note_demos_view.dart';
+import '../demos/my_collections_demos.dart';
+import '../demos/note_demos_view.dart';
 
 class TabLearn extends StatefulWidget {
   const TabLearn({super.key});

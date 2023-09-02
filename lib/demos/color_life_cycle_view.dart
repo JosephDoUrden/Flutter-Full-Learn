@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_full_learn/demos/color_demos_view.dart';
+import 'color_demos_view.dart';
 
 class ColorLifeCycleView extends StatefulWidget {
   const ColorLifeCycleView({super.key});

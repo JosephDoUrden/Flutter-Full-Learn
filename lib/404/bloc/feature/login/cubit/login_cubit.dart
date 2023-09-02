@@ -1,7 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_full_learn/404/bloc/feature/login/cubit/login_cubit_state.dart';
-import 'package:flutter_full_learn/404/bloc/feature/login/model/login_model.dart';
-import 'package:flutter_full_learn/404/bloc/feature/login/service/login_service.dart';
+import 'login_cubit_state.dart';
+import '../model/login_model.dart';
+import '../service/login_service.dart';
 
 class LoginCubit extends Cubit<LoginState> {
   LoginCubit(ILoginService loginService)

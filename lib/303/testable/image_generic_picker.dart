@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_full_learn/product/utility/image_upload.dart';
-import 'package:flutter_full_learn/product/utility/image_upload_manager.dart';
+import '../../product/utility/image_upload.dart';
+import '../../product/utility/image_upload_manager.dart';
 
 class ImagePickerGenericView extends StatefulWidget {
   const ImagePickerGenericView({super.key});

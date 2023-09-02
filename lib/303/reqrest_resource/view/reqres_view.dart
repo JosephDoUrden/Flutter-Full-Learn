@@ -1,6 +1,5 @@
-
 import 'package:flutter/material.dart';
-import 'package:flutter_full_learn/product/extension/string_extension.dart';
+import '../../../product/extension/string_extension.dart';
 
 import '../viewModel/reqres_view_model.dart';
 
